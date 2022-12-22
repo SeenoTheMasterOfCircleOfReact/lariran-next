@@ -1,0 +1,49 @@
+@import "../../colors.scss";
+
+.holder {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: block;
+  padding: 5px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .title {
+    font-size: 0.7rem;
+  }
+
+  .price {
+    .show {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .right {
+        font-size: 0.8rem;
+        color: #999;
+        text-decoration: line-through;
+      }
+
+      .percent {
+        background-color: $main-color;
+        padding: 2px 5px;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 0.9rem;
+      }
+    }
+
+    .real {
+      font-weight: 600;
+    }
+  }
+}

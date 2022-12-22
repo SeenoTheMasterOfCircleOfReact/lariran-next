@@ -1,0 +1,87 @@
+.holder {
+  .filters {
+    width: 100%;
+    // height: 40px;
+    display: flex;
+    gap: 10px;
+
+    > div {
+      width: 50%;
+      //   height: 100%;
+      display: flex;
+      gap: 10px;
+
+      > div {
+        width: 50%;
+        border: 1px solid #fff;
+
+        &.search {
+        }
+
+        &.calender {
+          border: 1px solid #ccc;
+          padding: 0 10px;
+          border-radius: 5px;
+
+          > div {
+            width: 100% !important;
+
+            .DatePickerButton {
+              width: 100%;
+              height: 48px;
+              background-color: #fff;
+              color: #333;
+              line-height: 40px;
+              border-radius: 5px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              > .Right {
+                width: calc(100% - 40px);
+                box-sizing: border-box;
+                cursor: pointer;
+              }
+
+              > .Left {
+                width: 40px;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                border-radius: 5px 0 0 5px;
+                border-right: 1px solid #eee;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .holder {
+    .filters {
+      flex-direction: column;
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .holder {
+    .filters {
+      > div {
+        width: 100%;
+        flex-direction: column;
+
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

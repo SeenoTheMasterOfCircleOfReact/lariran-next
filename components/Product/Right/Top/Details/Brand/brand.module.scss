@@ -1,0 +1,21 @@
+@import "../../../../../../styles/colors.scss";
+
+.brand {
+  width: fit-content;
+  border: 1px solid $light-blue-color;
+  color: $light-blue-color;
+  padding: 5px;
+  border-radius: $border-radius;
+  font-size: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+
+  .image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+}

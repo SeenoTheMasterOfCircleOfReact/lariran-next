@@ -1,0 +1,61 @@
+@import "../../colors.scss";
+
+.holder {
+  background-color: $main-color;
+  width: 100%;
+  height: 300px;
+  border-radius: $border-radius;
+  margin: 40px 0 20px 0;
+  overflow: hidden;
+
+  .top {
+    width: 100%;
+    height: 40px;
+    position: relative;
+
+    .label {
+      width: 200px;
+      height: 40px;
+      font-weight: 600;
+      font-size: 20px;
+      padding: 4px 0;
+      background-color: #fff;
+      text-align: center;
+      color: $main-color;
+      transform: rotate(45deg);
+      position: absolute;
+      right: -60px;
+      top: 20px;
+
+      .inner {
+        height: 100%;
+        border: 1px solid $main-color;
+        padding-top: 2px;
+      }
+    }
+  }
+
+  .bottom {
+    height: calc(100% - 80px);
+    display: flex;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    .right {
+      padding-top: 70px;
+      width: 80px;
+
+      .mainTitle {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+
+      .restTitle {
+        font-size: 1.4rem;
+      }
+    }
+    .left {
+      width: calc(100% - 80px);
+    }
+  }
+}

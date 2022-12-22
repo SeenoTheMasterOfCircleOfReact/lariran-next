@@ -1,0 +1,71 @@
+@import "../../../../styles/colors.scss";
+.card {
+  z-index: 10;
+  position: sticky;
+  top: 140px;
+  transition: top 0.2s ease;
+  background: linear-gradient(
+      0deg,
+      hsla(240, 3%, 94%, 0.5),
+      hsla(240, 3%, 94%, 0.5)
+    ),
+    #fff;
+  border-radius: 5px;
+  padding: 20px;
+  border: 1px solid #ccc;
+
+  .guarantee {
+    font-size: 0.8rem;
+    margin-top: 10px;
+    display: flex;
+    align-items: top;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .btn {
+    width: 100%;
+    border: 2px solid $main-color;
+    border-radius: $border-radius;
+    padding: 5px;
+    text-align: center;
+    color: $main-color;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .outOfStock {
+    .top {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: #ccc;
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      .line {
+        border-bottom: 2px solid #ccc;
+        width: 100%;
+      }
+    }
+    .bottom {
+      color: #aaa;
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    position: relative;
+    top: 0;
+    width: 100%;
+
+    .guarantee {
+      display: none;
+    }
+  }
+}

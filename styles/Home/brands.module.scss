@@ -1,0 +1,27 @@
+@import "../colors.scss";
+
+.brands {
+  margin: 40px 0 20px 0;
+  width: 100%;
+  border-top: 3px solid $main-color;
+  padding: 40px 0 0;
+  position: relative;
+
+  .title {
+    color: #333;
+    background-color: #fff;
+    padding-left: 10px;
+    position: absolute;
+    top: -18px;
+    right: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .brands {
+    width: 100%;
+    border-left: none;
+    border-radius: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.holder {
+  width: 1000px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .holder {
+    width: calc(100% - 250px);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .holder {
+    width: 100%;
+    padding-left: 0;
+  }
+}

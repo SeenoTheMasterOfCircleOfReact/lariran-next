@@ -1,0 +1,10 @@
+.top {
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+@media only screen and (max-width: 1000px) {
+  .top {
+    display: none;
+  }
+}

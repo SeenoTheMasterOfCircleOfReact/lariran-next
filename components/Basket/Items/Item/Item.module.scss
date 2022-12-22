@@ -1,0 +1,128 @@
+@import "../../../../styles/colors.scss";
+
+.item {
+  width: 100%;
+  height: 300px;
+  padding: 30px 10px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
+
+  .right {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .imgHolder {
+      width: 150px;
+      height: 150px;
+      display: block;
+    }
+
+    .counterHolder {
+      display: flex;
+      justify-content: center;
+
+      .counter {
+        width: 105px;
+        display: flex;
+        justify-content: center;
+        border: 1px solid #eee;
+        border-radius: 5px;
+
+        .counterBtn {
+          width: 35px;
+          height: 35px;
+          color: $main-color;
+          font-weight: bold;
+          line-height: 30px;
+          font-size: 1.1rem;
+          text-align: center;
+          cursor: pointer;
+        }
+        .counterInput {
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          color: $main-color;
+          line-height: 30px;
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .left {
+    flex-grow: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .name {
+      color: #333;
+    }
+
+    .price {
+      .showPrice {
+        display: flex;
+        color: #aaa;
+        font-weight: bold;
+        font-size: 0.8rem;
+        gap: 10px;
+
+        div {
+          &:first-child {
+            text-decoration: line-through;
+          }
+          &:last-child {
+            font-size: 1rem;
+            color: $main-color;
+          }
+        }
+      }
+
+      .realPrice {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+    }
+
+    .optionHolder {
+      display: flex;
+      height: 30px;
+      align-items: center;
+      gap: 10px;
+
+      .circle {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .holder {
+    padding: 20px 5px !important;
+    height: 250px !important;
+
+    .imgHolder {
+      width: 130px !important;
+      height: 130px !important;
+    }
+
+    .name {
+      font-size: 0.9rem !important;
+    }
+    .realPrice {
+      font-size: 1.1rem !important;
+    }
+  }
+}

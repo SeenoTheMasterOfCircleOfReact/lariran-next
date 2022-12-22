@@ -1,0 +1,32 @@
+@import "../colors.scss";
+
+.holder {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 10px;
+  display: flex;
+  gap: 20px;
+
+  .left {
+    width: calc(100% - 300px);
+    border-radius: $border-radius;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .holder {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .holder {
+    .left {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}

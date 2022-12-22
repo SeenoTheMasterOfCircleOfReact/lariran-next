@@ -1,0 +1,12 @@
+.holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.error {
+  height: 300px;
+}
+
+.loading {
+  height: calc(100vh - 180px);
+}

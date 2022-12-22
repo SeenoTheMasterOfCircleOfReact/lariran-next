@@ -1,0 +1,16 @@
+.holder {
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 10px;
+  .top {
+    font-size: 1.2rem;
+    padding: 10px 0;
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}

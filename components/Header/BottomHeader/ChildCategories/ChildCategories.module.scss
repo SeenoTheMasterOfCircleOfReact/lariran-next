@@ -1,0 +1,9 @@
+.child {
+  width: min-content;
+  height: 100%;
+  padding: 40px 10px 10px 10px;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}

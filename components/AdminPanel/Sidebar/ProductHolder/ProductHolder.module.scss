@@ -1,0 +1,28 @@
+.holder {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+
+  .title {
+    cursor: pointer;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .iconHolder {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+
+  .linkHolder {
+    transition: 0.1s;
+    height: 0;
+    overflow: hidden;
+
+    &.open {
+      height: auto;
+    }
+  }
+}

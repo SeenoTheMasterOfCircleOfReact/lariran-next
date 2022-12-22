@@ -1,0 +1,9 @@
+@import "../../../../styles/colors.scss";
+
+.holder {
+  height: 200px;
+  background-color: $main-color;
+  padding: 10px;
+  border-radius: $border-radius;
+  margin-top: 10px;
+}

@@ -1,0 +1,21 @@
+.holder {
+  width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .holder {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .holder {
+    padding-bottom: 130px;
+  }
+}

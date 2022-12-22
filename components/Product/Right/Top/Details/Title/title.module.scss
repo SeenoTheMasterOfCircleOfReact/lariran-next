@@ -1,0 +1,27 @@
+@import "../../../../../../styles/colors.scss";
+
+.title {
+  width: 100%;
+  margin-top: 10px;
+
+  &Persian {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  &English {
+    font-size: 0.8rem;
+    color: $color-neutral-300;
+    font-weight: 300;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .line {
+      border-bottom: 1px solid $color-neutral-300;
+      flex-grow: 2;
+    }
+  }
+}

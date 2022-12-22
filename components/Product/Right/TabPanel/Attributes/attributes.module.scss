@@ -1,0 +1,29 @@
+@import "../../../../../styles/colors.scss";
+
+.attributes {
+  padding-top: 10px;
+  background: linear-gradient(
+      0deg,
+      hsla(240, 3%, 94%, 0.5),
+      hsla(240, 3%, 94%, 0.5)
+    ),
+    #fff;
+
+  .attribute {
+    display: flex;
+    font-size: 0.9rem;
+    border-bottom: 1px solid $color-neutral-300;
+
+    .key {
+      width: 150px;
+      padding: 10px 2px;
+      background-color: #fff;
+      color: #666;
+    }
+
+    .value {
+      padding: 10px 10px;
+      width: 100%;
+    }
+  }
+}

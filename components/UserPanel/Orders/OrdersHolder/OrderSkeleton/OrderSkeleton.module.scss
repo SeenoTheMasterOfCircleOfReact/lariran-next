@@ -1,0 +1,38 @@
+.skeleton {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  direction: rtl;
+  padding: 20px;
+
+  .top {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .holder {
+    padding-top: 20px;
+    display: flex;
+    gap: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .skeleton {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    border-radius: 0;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+
+    .top {
+      border-bottom: none;
+      padding-bottom: 5px;
+    }
+    .holder {
+      padding-top: 5px;
+    }
+  }
+}

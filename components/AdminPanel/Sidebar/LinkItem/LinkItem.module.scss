@@ -1,0 +1,19 @@
+@import "../../../../styles/colors.scss";
+
+.link {
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: 0.1s;
+
+  &.selected {
+    background-color: $main-color;
+
+    &:hover {
+      background-color: $main-color;
+    }
+  }
+
+  &:hover {
+    background-color: #333;
+  }
+}

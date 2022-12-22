@@ -1,0 +1,28 @@
+.holder {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 10px 5px;
+
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eee;
+  }
+
+  .number,
+  .date,
+  .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .small {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  .bold {
+    font-weight: 600;
+  }
+}

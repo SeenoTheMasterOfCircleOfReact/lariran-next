@@ -1,0 +1,76 @@
+@import "../../../../styles/colors.scss";
+
+.filters {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: $color-background-light;
+  border-radius: $border-radius;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: #555;
+  position: sticky;
+  top: calc($header-height + 50px);
+
+  .titleHolder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .title {
+      color: #888;
+      display: flex;
+      align-items: center;
+    }
+
+    .deleteFilters {
+      color: $main-color;
+      cursor: pointer;
+      font-size: 0.6rem;
+      font-weight: 700;
+    }
+  }
+
+  .onlyStock {
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+  }
+
+  .priceRange {
+    padding: 0 10px;
+
+    .prices {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+
+      .price {
+        width: 50%;
+
+        &:last-child {
+          text-align: left;
+        }
+      }
+    }
+
+    .sliderHolder {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .filters {
+    border: none;
+  }
+}

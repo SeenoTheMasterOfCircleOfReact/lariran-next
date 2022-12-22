@@ -1,0 +1,9 @@
+.holder {
+  width: 410px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .holder {
+    width: 100%;
+  }
+}

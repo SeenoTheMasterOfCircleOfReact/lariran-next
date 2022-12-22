@@ -1,0 +1,34 @@
+@import "../colors.scss";
+
+.main {
+  background-color: $background-color;
+  color: #fff;
+
+  .wrapper {
+    width: 1300px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+
+    .holder {
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .main {
+    .wrapper {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    .wrapper {
+      .holder {
+      }
+    }
+  }
+}

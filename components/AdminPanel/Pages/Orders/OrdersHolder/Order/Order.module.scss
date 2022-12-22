@@ -1,0 +1,62 @@
+.Order {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  direction: rtl;
+  padding: 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.Top {
+  display: block;
+  color: #000;
+}
+.Top:hover {
+  color: #000;
+}
+.Status span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.Status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Details {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.Details .Small {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+.Details .Bold {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.Images {
+  padding-top: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .Order {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    border-radius: 0;
+  }
+  .Top {
+    border-bottom: none;
+    padding-bottom: 5px;
+  }
+  .Images {
+    padding-top: 5px;
+  }
+}

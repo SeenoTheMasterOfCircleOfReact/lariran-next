@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss";
+
+.holder {
+  display: flex;
+  gap: 10px;
+}
+
+.empty {
+  width: 100%;
+  height: calc(100vh - ($header-height + 20px));
+}
+
+@media screen and (min-width: 1000px) {
+  .holder {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../styles/colors.scss";
+
+.layout {
+  padding-top: $header-height;
+  position: relative;
+}
+
+.adminLayout {
+  direction: rtl;
+  position: relative;
+  .holder {
+    display: flex;
+    position: relative;
+
+    .pageWrapper {
+      margin-right: 250px;
+      background-color: #eee;
+      min-height: calc(100vh - 64px);
+      position: relative;
+      flex-grow: 2;
+      z-index: 1;
+      transition: 0.1s;
+
+      &.open {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .holder {
+    display: block !important;
+
+    .pageWrapper {
+      width: 100% !important ;
+      margin-right: 0 !important;
+    }
+  }
+}

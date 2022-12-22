@@ -1,0 +1,74 @@
+.holder {
+  width: calc((100% - 15px) / 4);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .item {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 10px 20px;
+      flex-grow: 2;
+
+      .data {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        flex-grow: 2;
+
+        .left {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          flex-grow: 2;
+
+          .name {
+            font-size: 0.9rem;
+            color: #666;
+          }
+
+          .persianName {
+            font-size: 1.1rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 5px;
+      padding: 5px 20px;
+    }
+  }
+
+  .bottom {
+    border-top: 1px solid #eee;
+    padding: 5px 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .holder {
+    width: calc((100% - 10px) / 3);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .holder {
+    width: calc((100% - 5px) / 2);
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .holder {
+    width: 100%;
+  }
+}

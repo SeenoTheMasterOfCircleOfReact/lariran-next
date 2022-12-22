@@ -1,0 +1,19 @@
+@import "../colors.scss";
+
+.holder {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 10px;
+
+  .error {
+    height: calc(100vh - ($header-height + 20px));
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .holder {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

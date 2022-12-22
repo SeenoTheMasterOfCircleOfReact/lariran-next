@@ -1,0 +1,57 @@
+.holder {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .errorMessage {
+    color: rgb(184, 33, 33);
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+    sub {
+      display: block;
+    }
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+
+    .Arrow {
+      cursor: pointer;
+    }
+  }
+
+  .check,
+  .login,
+  .signup {
+    border: 1px solid #ccc;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .check,
+  .login {
+    border: none;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .check,
+  .login,
+  .signup {
+    width: 100%;
+  }
+}

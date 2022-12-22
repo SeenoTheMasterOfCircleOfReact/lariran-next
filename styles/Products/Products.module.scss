@@ -1,0 +1,78 @@
+@import "../colors.scss";
+
+.holder {
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 10px;
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1000px;
+    grid-gap: 1rem;
+
+    .left {
+      .drawerToggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        display: none;
+
+        .sortToggle {
+          width: 50%;
+          padding: 15px;
+          font-weight: 600;
+          background-color: #eee;
+          border-radius: $border-radius;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+        .filterToggle {
+          width: 50%;
+          padding: 15px;
+          font-weight: 600;
+          background-color: #eee;
+          border-radius: $border-radius;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .holder {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .bottom {
+      grid-template-columns: 280px 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .holder {
+    .bottom {
+      grid-template-columns: 1fr;
+      .right {
+        display: none;
+      }
+      .left {
+        .drawerToggle {
+          display: flex;
+        }
+        .sort {
+          display: none;
+        }
+      }
+    }
+  }
+}

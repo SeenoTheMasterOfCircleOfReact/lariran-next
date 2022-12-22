@@ -1,0 +1,22 @@
+@import "../../../../styles/colors.scss";
+
+.root {
+  background-color: $main-color;
+  width: 200px;
+  color: #fff;
+  border-radius: 0 0 $border-radius 0;
+
+  .category {
+    display: block;
+    height: 40px;
+    padding-right: 10px;
+    line-height: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.15s;
+
+    &:hover {
+      background-color: $main-color-light;
+    }
+  }
+}

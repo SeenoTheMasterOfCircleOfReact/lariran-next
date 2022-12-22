@@ -1,0 +1,26 @@
+@import "../../../styles/colors.scss";
+
+.holder {
+  margin-bottom: 50px;
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .select {
+      width: calc(100% - 120px);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bottom {
+    flex-direction: column !important;
+    gap: 10px;
+
+    .select {
+      width: 100% !important;
+    }
+  }
+}

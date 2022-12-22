@@ -1,0 +1,15 @@
+.holder {
+  width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .holder {
+    display: none;
+  }
+}

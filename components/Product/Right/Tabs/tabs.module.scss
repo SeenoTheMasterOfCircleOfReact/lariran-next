@@ -1,0 +1,23 @@
+@import "../../../../styles/colors.scss";
+.tabs {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px solid #ccc;
+
+  .tab {
+    padding: 10px 5px;
+    font-size: 0.8rem;
+    border-radius: 0 0 3px 3px;
+    padding-bottom: 9px;
+    cursor: pointer;
+
+    &.selected {
+      border-bottom: 4px solid $main-color;
+      color: $main-color;
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.holder {
+  width: calc(100% - 460px);
+  padding: 0 5px 0 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .holder {
+    width: 100%;
+  }
+}

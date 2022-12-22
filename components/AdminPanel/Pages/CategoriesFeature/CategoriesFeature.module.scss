@@ -1,0 +1,28 @@
+.holder {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-radius: 5px;
+  overflow: hidden;
+
+  .breadcrumbs {
+    padding: 0px 20px;
+    display: flex;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    gap: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    > div {
+      padding: 5px 0;
+      cursor: pointer;
+      color: #999;
+
+      &::after {
+        content: "/";
+        margin-right: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../../styles/colors.scss";
+
+.sidebar {
+  width: 300px;
+  height: fit-content;
+  background-color: $main-color;
+  border-radius: $border-radius;
+  color: #fff;
+  overflow: hidden;
+
+  .item {
+    padding: 0px 20px 0 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 300;
+
+    &:hover {
+      background-color: #fff;
+      color: $main-color;
+    }
+
+    .holder {
+      padding: 20px 5px 20px 5px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .orders {
+    .holder {
+      border-top: 2px solid #fff;
+    }
+  }
+
+  .logout {
+    .holder {
+      border-bottom: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    width: 100%;
+  }
+}

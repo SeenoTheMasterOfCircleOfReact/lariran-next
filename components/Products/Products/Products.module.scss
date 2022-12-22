@@ -1,0 +1,31 @@
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+@media screen and (max-width: 1220px) and (min-width: 1000px) {
+  .products {
+    a {
+      width: calc(100% / 3);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .products {
+    a {
+      width: calc(100% / 2);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .products {
+    a {
+      width: 100%;
+    }
+  }
+}
