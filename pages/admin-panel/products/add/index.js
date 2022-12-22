@@ -1,18 +1,19 @@
 import { useEffect, useState, useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../../../../store/auth-context";
+import dynamic from "next/dynamic";
 
 import Brands from "../../../../components/AdminPanel/Pages/Products/AddProduct/Brands/Brands";
 import Categories from "../../../../components/AdminPanel/Pages/Products/AddProduct/Categories/Categories";
 import Inputs from "../../../../components/AdminPanel/Pages/Products/AddProduct/Inputs/Inputs";
 import Options from "../../../../components/AdminPanel/Pages/Products/AddProduct/Options/Options";
 import Title from "../../../../components/AdminPanel/Title/Title";
+// import Description from "../../../../components/AdminPanel/Pages/Products/AddProduct/Description/Description";
 
 import classes from "../../../../styles/AdminPanel/Products/Products.module.scss";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { LoadingButton } from "@mui/lab";
-import Description from "../../../../components/AdminPanel/Pages/Products/AddProduct/Description/Description";
 
 export default function AddProduct() {
   const authCtx = useContext(AuthContext);
@@ -101,6 +102,14 @@ export default function AddProduct() {
         setPostLoading(false);
       });
   }
+
+  const Description = dynamic(
+    () =>
+      import(
+        "../../../../components/AdminPanel/Pages/Products/AddProduct/Description/Description"
+      ),
+    { ssr: false }
+  );
 
   return (
     <div className={classes.holder}>
