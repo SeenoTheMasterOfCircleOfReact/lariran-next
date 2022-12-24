@@ -60,19 +60,12 @@ export async function getServerSideProps(context) {
   } finally {
   }
 
-  // const productResponse = await fetch(`${baseUrl}product/${params.slug[0]}`);
-  // const productData = await productResponse?.json();
-
   const relatedResponse = await fetch(
     `${baseUrl}product/${params.slug[0]}/relateds`
   );
   const relatedData = await relatedResponse?.json();
 
   return {
-    // props: {
-    //   product: productData.data,
-    //   related: relatedData.data,
-    // },
     props: {
       product: productData.data,
       related: relatedData.data,

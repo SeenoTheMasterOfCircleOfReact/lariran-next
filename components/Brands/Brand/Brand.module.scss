@@ -1,0 +1,47 @@
+@import "../../../styles/colors.scss";
+
+.holder {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: $main-color;
+  display: flex;
+  width: calc((100% - 60px) / 4);
+  padding: 10px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 5px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .top {
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+
+    .bottom {
+      font-size: 0.8rem;
+      color: #000;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .holder {
+    width: calc((100% - 40px) / 3);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .holder {
+    width: calc((100% - 20px) / 2);
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .holder {
+    width: 100%;
+  }
+}
