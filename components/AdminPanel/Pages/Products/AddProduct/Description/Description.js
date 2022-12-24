@@ -2,8 +2,8 @@ import React from "react";
 
 import Title from "../../../../Title/Title";
 
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+// import { CKEditor } from "@ckeditor/ckeditor5-react";
+// import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 export default function Description({
   description,
@@ -16,7 +16,7 @@ export default function Description({
       {Boolean(errors?.description) && (
         <sub style={{ color: "red" }}>{errors?.description?.[0]}</sub>
       )}
-      <CKEditor
+      {/* <CKEditor
         editor={ClassicEditor}
         data={description}
         config={{
@@ -32,7 +32,7 @@ export default function Description({
         style={{
           height: "400px",
         }}
-      />
+      /> */}
     </div>
   );
 }
