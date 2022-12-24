@@ -1,17 +1,17 @@
 import { useEffect, useState, useContext } from "react";
-import axios from "axios";
-import { AuthContext } from "../../../../store/auth-context";
-import { useRouter } from "next/router";
-import dynamic from "next/dynamic";
+// import axios from "axios";
+// import { AuthContext } from "../../../../store/auth-context";
+// import { useRouter } from "next/router";
+// import dynamic from "next/dynamic";
 
-import Brands from "../../../../components/AdminPanel/Pages/Products/AddProduct/Brands/Brands";
-import Categories from "../../../../components/AdminPanel/Pages/Products/AddProduct/Categories/Categories";
-import Inputs from "../../../../components/AdminPanel/Pages/Products/AddProduct/Inputs/Inputs";
-import Options from "../../../../components/AdminPanel/Pages/Products/AddProduct/Options/Options";
+// import Brands from "../../../../components/AdminPanel/Pages/Products/AddProduct/Brands/Brands";
+// import Categories from "../../../../components/AdminPanel/Pages/Products/AddProduct/Categories/Categories";
+// import Inputs from "../../../../components/AdminPanel/Pages/Products/AddProduct/Inputs/Inputs";
+// import Options from "../../../../components/AdminPanel/Pages/Products/AddProduct/Options/Options";
 // import Description from "../../../../components/AdminPanel/Pages/Products/AddProduct/Description/Description";
 
-import classes from "../../../../styles/AdminPanel/Products/Products.module.scss";
-import { LoadingButton } from "@mui/lab";
+// import classes from "../../../../styles/AdminPanel/Products/Products.module.scss";
+// import { LoadingButton } from "@mui/lab";
 
 export default function EditProduct() {
   //   const authCtx = useContext(AuthContext);
