@@ -10,7 +10,7 @@ import { useEffect, useState, useContext } from "react";
 // import Options from "../../../../components/AdminPanel/Pages/Products/AddProduct/Options/Options";
 // import Description from "../../../../components/AdminPanel/Pages/Products/AddProduct/Description/Description";
 
-// import classes from "../../../../styles/AdminPanel/Products/Products.module.scss";
+import classes from "../../../../styles/AdminPanel/Products/Products.module.scss";
 // import { LoadingButton } from "@mui/lab";
 
 export default function EditProduct() {
